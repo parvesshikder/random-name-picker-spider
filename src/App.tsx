@@ -305,13 +305,6 @@ export default function App() {
   // Draw spider
   const drawSpider = (ctx: CanvasRenderingContext2D, spider: Spider, size: number) => {
     const legLength = size * 2;
-    const spacing = gridSpacingRef.current;
-    
-    // angles around the body for legs (independent of orientation)
-    const legOffsets = [
-      -Math.PI * 0.8, -Math.PI * 0.55, -Math.PI * 0.3, -Math.PI * 0.05,
-      Math.PI * 0.05, Math.PI * 0.3, Math.PI * 0.55, Math.PI * 0.8
-    ];
 
     ctx.strokeStyle = '#1e293b';
     ctx.lineWidth = 2.5;
